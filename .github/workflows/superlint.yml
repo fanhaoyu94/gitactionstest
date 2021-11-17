@@ -7,13 +7,13 @@ jobs:
     name: Check_super_linter
     runs-on: ubuntu-latest
     steps:
-      -name: checkcode
-       uses: actions/checkout@v2
+      - name: checkcode
+        uses: actions/checkout@v2
 
-      -name: superlinter
-       uses: github/super-linter@v3
-       env:
-         DEFAULT_BRANCH: main
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
-         VALIDATE_ALL_CODEBASE: false
+      - name: superlinter
+        uses: github/super-linter@v3
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          VALIDATE_ALL_CODEBASE: false
       
