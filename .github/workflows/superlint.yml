@@ -1,7 +1,9 @@
 name: Super_Linter_check
 
-on: push
-
+on: 
+  push: 
+    branches: [main]
+  
 jobs:
   superlinter:
     name: Check_super_linter
